@@ -1,0 +1,12 @@
+<script>
+
+    const quantosNumeros = Number(prompt(`Quantos numeros você deseja ver na sequencia fibonacci: `));
+    let fibonacci = [0, 1];
+    for (let contador = 2; contador <= quantosNumeros; contador++) {
+    let novoNumero = fibonacci[ contador - 1] + fibonacci[contador - 2];
+    fibonacci.push(novoNumero);
+
+    document.write(`A sequência de fibonacci com ${quantosNumeros} é: ${fibonacci}</br>`);
+}
+
+</script>
