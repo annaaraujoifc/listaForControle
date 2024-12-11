@@ -10,26 +10,19 @@
     */
 
     //ENTRADA
+    
     let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let letrasminusculas = [];
 
     //PROCESSAMENTO
-    let letrasRepetidas = [];
-    let letrasUnicas = [];
+    
 
-    for (let letra of listaDeLetras) {
-        let todasLetras = letra.toLowerCase(); 
-        if (letrasUnicas.includes(todasLetras)) {
-            if (!letrasRepetidas.includes(todasLetras)) {
-                letrasRepetidas.push(todasLetras); 
-            }
-        } else {
-            letrasUnicas.push(todasLetras); 
-        }
+    for (let contador = 0; contador < listaDeLetras.length; contador++) {
+
+        const letra = listaDeLetras[contador].toLowerCase();
     }
 
-    letrasRepetidas.sort();
-
     //SAÍDA
-    console.log(letrasRepetidas);
-</script>
+    document.write(letrasminusculas.sort());
+
 </script>
