@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA: SOMA E MÉDIA
+    Faça um programa que leia 5 números e informe a soma e média dos números.
+    */
+
+    //ENTRADA
+
+
+    //PROCESSAMENTO
+
+    let soma = 0;
+    
+    for (let contador = 1; contador <= 5; contador++) {
+
+        let numero = Number(prompt(`Informe o ${contador}º número: `));
+        soma += numero;
+
+    }
+
+    let media = soma / 5;
+
+    //SAÍDA
+    document.write(`A soma dos números é: ${soma} `);
+    document.write(`A média dos números é: ${media} `);
+</script>
