@@ -7,6 +7,7 @@
 
     //ENTRADA
 
+<<<<<<< HEAD
     const numInicial = Number(prompt(`Informe um numero Inicial: `));
     const numFinal = Number(prompt(`Informe um numero Final: `));
 
@@ -20,11 +21,28 @@
             let pares = [];
             let impares = [];
             if (contador % 2 === 0) {
+=======
+    const numeroInicial = Number(prompt(`Informe um número inicial: `));
+    const numeroFinal = Number(prompt(`Informe um numero final: `));
+
+    //PROCESSAMENTO
+
+    if (numeroInicial < numeroFinal) {
+        
+        let pares = [];
+        let impares = [];
+
+        for (let contador = numeroInicial + 1; contador < numeroFinal; contador++) {
+
+            if (contador % 2 == 0) {
+
+>>>>>>> ea5977100771b751c86bee80e0889ba34d2508b5
                 pares.push(contador);
             } else {
 
                 impares.push(contador);
             }
+<<<<<<< HEAD
 
             document.write(`Os números pares entre ${numInicial} e ${numFinal} é: ${pares} `);
             document.write(`Os números impares entre ${numInicial} e ${numFinal} é: ${impares} `);
@@ -39,4 +57,19 @@
 
     //SAÍDA
 
+=======
+        }
+
+        document.write(`Os numeros pares são: ${pares}<br>`);
+        document.write(`Os numeros impares são: ${impares} `);
+
+    } else {
+
+        alert(`O numero incial deve ser menor que o numero final`);
+    }
+
+    //SAÍDA
+
+
+>>>>>>> ea5977100771b751c86bee80e0889ba34d2508b5
 </script>

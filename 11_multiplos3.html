@@ -1,0 +1,21 @@
+<script>
+    /*
+    PROBLEMA: MÚLTIPLOS DE 3
+    Criar um programa que imprima todos os números múltiplos de 3 entre 1 e 100. Calcule a soma dos números.
+    */
+
+    //ENTRADA
+    let numeros = [];
+    let soma = 0;
+    //PROCESSAMENTO
+
+    for (multiplos = 3; multiplos <= 100; multiplos+=3) {
+        
+        numeros.push(multiplos);
+        soma += multiplos;
+    }
+    //SAÍDA
+    document.write(`Os numeros multiplos de 3, são: ${numeros.join(", ")}<br>`);
+    document.write(`A soma desses numeros é: ${soma}`);
+
+</script>2
