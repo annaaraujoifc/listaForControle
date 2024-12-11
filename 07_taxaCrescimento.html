@@ -7,15 +7,20 @@
 
     //ENTRADA
 
+    let populacao = 80000;
+    const taxaCrescimento = 1.03;
+    const populacaoObjetivo = 200000;
+
     //PROCESSAMENTO
 
-    for (let contador = 0; popuIncial = 80000, popu < 200000; contador++) {
+    for ( anos = 0; populacao < populacaoObjetivo; anos++) {
 
-        popu = popu * 1.03;
-        
+        populacao *= taxaCrescimento;
+
     }
     //SAÍDA
-alert(contador);
-    document.write(`Será necessário `+contador+` anos para atingir 20000 habitantes`);
 
-</script>
+    alert("Será necessário " + anos + " anos para atingir 20000 habitantes");
+    
+
+</script> 
